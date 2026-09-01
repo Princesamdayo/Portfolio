@@ -1,0 +1,847 @@
+<html>
+    <head>
+        <title>Hotel Page</title>
+    </head>
+
+    <style>
+    
+        body{
+            background: gray;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            color: white;
+            padding: 10px;
+            margin-right: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 45px;
+
+            
+        }
+
+        header{
+
+            
+            background: gray;
+        }
+        .navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+.nav-links{
+    
+    
+    display: flex;
+    gap: 35px;
+   
+   
+    
+}
+
+.nav-links a{
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+   
+    
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links a:hover{
+    color: #fff;
+    background-color: black;
+    padding: 5px;
+}
+
+
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* full screen height, adjust as needed */
+    overflow: hidden;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .hero-title {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 42px;
+    font-weight: 400;
+    
+    margin: 0;
+  }
+
+  .button-group {
+    display: flex;
+    gap: 20px;
+  }
+
+  .btn {
+    padding: 16px 36px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+  }
+.btn:hover {
+    background: black;
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+  .btn-primary {
+    background-color: #6b3a2a;
+    color: #ffffff;
+  }
+
+  .btn-secondary {
+    background-color: #ffffff;
+    color: #1a1a1a;
+  }
+.btn-secondary:hover{
+    color: #fff;
+  }
+  
+  .stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .stat-number {
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .stat-caption {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 4px;
+    max-width: 220px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 28px;
+    }
+
+    .stats-row {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .button-group {
+      flex-direction: column;
+      width: 80%;
+    }
+  }
+  .one{
+    background: gray;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+   h2{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .one p{
+    color: whitesmoke;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eeeeea;
+}
+
+
+.hotel-info {
+    width: 100%;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.info-box {
+    background: #f7f7f2;
+    padding: 55px 50px;
+    min-height: 530px;
+    border-radius: 12px;
+}
+
+.info-box h2 {
+    font-size: 34px;
+    line-height: 1.15;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.info-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.info-box a {
+    display: block;
+    margin-top: 35px;
+    color: #777;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.info-box a:hover {
+    color: #222;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+    .hotel-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+   .read {
+    padding: 16px 36px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 6px;
+    background-color: black;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    
+  }
+  
+
+  .read:hover {
+    background: black;
+    color: #6b3a2a;
+  }
+
+
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* full screen height, adjust as needed */
+    overflow: hidden;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+ 
+  .testimonial-section {
+    position: relative;
+    width: 100%;
+  }
+
+  .testimonial-image {
+    width: 100%;
+    display: block;
+  }
+
+  .testimonial-banner {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 40px;
+  }
+
+  .testimonial-banner h2 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #f5f0e1; /* cream/off-white */
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .testimonial-banner {
+      padding: 12px 20px;
+    }
+
+    .testimonial-banner h2 {
+      font-size: 24px;
+    }
+  }
+
+
+
+    .testimonial {
+    position: relative;
+    width: 100%;
+    
+  }
+
+  .image {
+    width: 95%;
+    align-items: center;
+    height: 300px;
+    margin-left: 25px;
+    display: block;
+    background-color: #fff;
+  }
+
+  .banner {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 40px;
+  }
+
+  .banner h2 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 700;
+    color: black
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .banner {
+      padding: 12px 20px;
+    }
+
+    .banner h2 {
+      font-size: 24px;
+    }
+  }
+  p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+  }
+  h5{
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  h6{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+  }
+  .book-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 80px;
+    background: #050505;
+    color: #fff;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+.book-btn:hover{
+  color:  rgb(128, 64, 64);
+}
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    background: #171717;
+    color: white;
+    padding: 70px 8%;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 80px;
+
+    align-items: start;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.hotel-logo {
+    width: 355px;
+    height: 105px;
+
+    border: 2px solid #ddd;
+
+    text-align: center;
+    position: relative;
+
+    padding-top: 25px;
+}
+
+.hotel-logo span {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #171717;
+    padding: 0 12px;
+
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.hotel-logo h2 {
+    font-family: Georgia, serif;
+    font-size: 43px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.hotel-logo small {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #171717;
+    padding: 0 12px;
+
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   GREEN KEY
+========================= */
+
+.green-key {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.key-icon {
+    width: 115px;
+    height: 140px;
+
+    background: #e8e3b4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #32946c;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.green-key span {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.green-key b {
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   FOOTER COLUMNS
+========================= */
+
+.footer-column h2 {
+    font-size: 34px;
+    margin-bottom: 45px;
+}
+
+.footer-column p,
+.footer-column a {
+    display: block;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 22px;
+    line-height: 1.5;
+
+    margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .hotel-logo {
+        width: 100%;
+        max-width: 355px;
+    }
+
+    .footer-column h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .footer-column p,
+    .footer-column a {
+        font-size: 18px;
+    }
+}
+
+.footer-bottom {
+    
+
+    
+    padding: 30px 6% 20px;
+    background: #050505;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #bdbdbd;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: #bdbdbd;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-bottom a:hover {
+    color: white;
+}
+
+.developer-logo {
+    font-size: 27px;
+    font-weight: 300;
+    margin-left: 5px;
+    color: white;
+}
+
+
+/* Back to top button */
+
+.back-to-top {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #333;
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background: #555;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        background: #050505;
+    }
+
+    .footer-bottom p {
+        line-height: 1.6;
+    }
+
+}
+  
+
+    </style>
+
+    <body>
+
+
+        
+        <header>
+                       <nav class="navbar">
+                
+                    <h1>ROYAL CREST SUITS & HOTEL</h1>
+                
+
+                <ul class="nav-links">
+                   <a href="index.html">Home</a>
+                   <a href="Our Rooms.html">Our Rooms</a>
+                   <a href="Contact.html">Contact</a>
+                   <a href="Booking.html">Booking</a>
+                </ul>
+            </nav>
+
+        </header>
+       <div class="hero">
+  <img src="hotel7.webp" alt="Luxurious Room" class="hero-image">
+
+  <div class="hero-content">
+    <h1 class="hero-title">We Offer A Good and Luxirious Rooms</h1>
+
+    <div class="button-group">
+      <a href="Booking.html" class="btn btn-primary">Book now</a>
+      <a href="Contact.html" class="btn btn-secondary">Contact us</a>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat">
+        <div class="stat-number">100 m</div>
+        <div class="stat-caption">from Fløibanen</div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-number">100+</div>
+        <div class="stat-caption">bars, restaurants and shops right out the door</div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-number">1 min</div>
+        <div class="stat-caption">walk to Bryggen</div>
+      </div>
+    </div>
+  </div>
+</div>
+        <section class="one">
+            <h2>Welcome to Our Boutique Hotel</h2>
+            <p>A Unique Hotel Experience in Royal Crest</p>
+
+        </section>
+
+
+        <section class="hotel-info">
+
+    <div class="info-box">
+        <h2>Unique and<br>personal</h2>
+
+        <p>
+            Our wish is to offer you a unique and more personal hotel
+            experience. We want you to feel at home when you're staying
+            at our hotel – that means we go the extra mile to ensure
+            your needs and wants are fulfilled. If you need anything,
+            we stand ready to assist.
+        </p>
+
+        <a href="#">Read more about the hotel</a>
+    </div>
+
+
+    <div class="info-box">
+        <h2>The extra mile</h2>
+
+        <p>
+            Our focus is on delivering that little extra that makes
+            your stay with us memorable. Our guests can enjoy free
+            admission to the Vikinghallen fitness center as well as
+            excellent discounts on selected restaurants and bars in
+            Bergen. Inquire in the lobby for more information.
+        </p>
+
+        <a href="#">Experience Bergen by bike</a>
+    </div>
+
+
+    <div class="info-box">
+        <h2>Transport and<br>parking</h2>
+
+        <p>
+            The airport express coach – and most other buses in Bergen –
+            have stops by Bryggen, no more than a couple of minutes walk
+            from the hotel. Just around the corner you will also find
+            Rosenkrantz parking garage. If you prefer vertical travel to
+            horizontal, there's always the Floyen Funicular just down
+            the street.
+        </p>
+    </div>
+<a class="read" href="Review.html">Read Review</a>
+</section>
+
+
+<div class="testimonial-section">
+  <img src="hotel9.jpg" alt="Guest Room" class="testimonial-image">
+  <div class="testimonial-banner">
+    <h2>What Our guests Say:</h2>
+<br><br><br><br><br>
+
+    <div class="testimonial">
+  <div class="image"></div>
+  <div class="banner">
+    <h2>First stay at Royal Crest Hotel, i'll be back</h2><br><br><br>
+    <p>My first stay at royal crest hotel was just a great visit, a really cozy nice hotel close to the city harboir in the center of town.
+       Delicious breakfast and cozy bar. i'll highly recommend this boutique hotel, i'll be back!</p>
+  
+       <h5>gogogroovedude</h5>
+       <h6>Osoyro, Norge</h6>
+  </div> <br><br>
+  <div class="button">
+      <a href="Booking.html" class="book-btn">Book your room now</a>
+    </div>
+</div>
+
+  </div>
+  
+
+</div>
+
+
+
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Logo section -->
+        <div class="footer-logo">
+            <div class="hotel-logo">
+                <span>ROYAL</span>
+                <h2>CREST</h2>
+                <small>HOTEL</small>
+            </div>
+
+            <div class="green-key">
+                <div class="key-icon">G</div>
+                <span>World Hotels<br><b>CRAFTED</b></span>
+            </div>
+        </div>
+
+
+        <!-- Contact section -->
+        <div class="footer-column">
+            <h2>Contact us</h2>
+
+            <p>+47 55 30 09 10</p>
+            <a href="princesamdayo@gmail.com">Email: princesamdayo@gmail.com</a>
+            <a href="Contact.html">Contact form</a>
+        </div>
+
+
+        <!-- Visit section -->
+        <div class="footer-column">
+            <h2>Visit us</h2>
+
+            <p>Royal Crest Hotel</p>
+            <p>Finnegårdsgaten 6,<br>
+            Bergen – NORWAY</p>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<div class="footer-bottom">
+
+    <p>
+        © 2026 ROYAL CREST HOTEL /
+        DESIGN AND DEVELOPED BY
+        <span class="developer-logo">A9</span>
+    </p>
+
+    <a href="#">PRIVACY POLICY</a>
+
+   
+
+</div>
+
+    </body>
+</html>

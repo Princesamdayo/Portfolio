@@ -1,0 +1,366 @@
+<html>
+    <head>
+        <title>Room</title>
+    </head>
+<style>
+
+        body{
+            background: gray;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            color: white;
+            padding: 10px;
+            margin-right: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 45px;
+
+            
+        }
+
+        header{
+
+            
+            background: gray;
+        }
+        .navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+.nav-links{
+    
+    
+    display: flex;
+    gap: 35px;
+   
+   
+    
+}
+
+.nav-links a{
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+   
+    
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links a:hover{
+    color: #fff;
+    background-color: black;
+    padding: 5px;
+}
+    /* OUR ROOMS */
+
+.rooms {
+    padding: 100px 7%;
+    background: #f5f3ef;
+}
+
+.rooms-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.rooms-heading p {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.rooms-heading h1 {
+    font-family: Georgia, serif;
+    font-size: 55px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.rooms-heading span {
+    color: #666;
+    font-size: 17px;
+}
+
+
+/* ROOM CONTAINER */
+
+.rooms-container {
+    max-width: 1250px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* ROOM CARD */
+
+.room-card {
+    background: white;
+    overflow: hidden;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* ROOM IMAGE */
+
+.room-card img {
+    width: 100%;
+    height: 270px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ROOM CONTENT */
+
+.room-content {
+    padding: 28px;
+}
+
+.room-content h2 {
+    font-family: Georgia, serif;
+    font-size: 29px;
+    font-weight: normal;
+
+    margin-bottom: 15px;
+
+    color: #222;
+}
+
+.room-content p {
+    color: #666;
+    line-height: 1.7;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ROOM INFO */
+
+.room-info {
+    display: flex;
+    gap: 20px;
+
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+    padding: 15px 0;
+
+    color: #555;
+    font-size: 14px;
+}
+
+
+/* BOTTOM */
+
+.room-bottom {
+    margin-top: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.room-bottom strong {
+    font-size: 15px;
+    color: #222;
+}
+
+
+/* BUTTON */
+
+.book-btn {
+    background: #111;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 18px;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background: #444;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .rooms-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .rooms {
+        padding: 70px 5%;
+    }
+
+    .rooms-heading h1 {
+        font-size: 40px;
+    }
+
+    .rooms-container {
+        grid-template-columns: 1fr;
+    }
+
+    .room-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+</style>
+
+<body>
+      <header>
+                       <nav class="navbar">
+                
+                    <h1>ROYAL CREST SUITS & HOTEL</h1>
+                
+
+                <ul class="nav-links">
+                   <a href="index.html">Home</a>
+                   <a href="Our Rooms.html">Our Rooms</a>
+                   <a href="Contact.html">Contact</a>
+                   <a href="Booking.html">Booking</a>
+                </ul>
+            </nav>
+
+        </header>
+    
+    <section class="rooms" id="rooms">
+
+    <div class="rooms-heading">
+        <p>STAY WITH US</p>
+        <h1>Our rooms</h1>
+        <span>
+            Relax and enjoy comfortable rooms designed for your stay.
+        </span>
+    </div>
+
+    <div class="rooms-container">
+
+        <!-- Room 1 -->
+        <div class="room-card">
+
+            <img src="hotel3.jpg" alt="Deluxe room">
+
+            <div class="room-content">
+                <h2>Deluxe Room</h2>
+
+                <p>
+                    A comfortable and stylish room with everything
+                    you need for a relaxing stay.
+                </p>
+
+                <div class="room-info">
+                    <span>👤 2 Guests</span>
+                    <span>🛏 1 Bed</span>
+                </div>
+
+                <div class="room-bottom">
+                    <strong>From €150 / night</strong>
+
+                    <a href="Booking.html" class="book-btn">
+                        Book your room
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Room 2 -->
+        <div class="room-card">
+
+            <img src="Luxury hotel room.jpg" alt="Superior room">
+
+            <div class="room-content">
+                <h2>Superior Room</h2>
+
+                <p>
+                    Enjoy a spacious room with a beautiful interior
+                    and a peaceful atmosphere.
+                </p>
+
+                <div class="room-info">
+                    <span>👤 2 Guests</span>
+                    <span>🛏 1 Bed</span>
+                </div>
+
+                <div class="room-bottom">
+                    <strong>From €180 / night</strong>
+
+                    <a href="Booking.html" class="book-btn">
+                        Book your room
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Room 3 -->
+        <div class="room-card">
+
+            <img src="hotel1.jpg" alt="Family room">
+
+            <div class="room-content">
+                <h2>Family Room</h2>
+
+                <p>
+                    A spacious room perfect for families and
+                    longer stays.
+                </p>
+
+                <div class="room-info">
+                    <span>👤 4 Guests</span>
+                    <span>🛏 2 Beds</span>
+                </div>
+
+                <div class="room-bottom">
+                    <strong>From €220 / night</strong>
+
+                    <a href="Booking.html" class="book-btn">
+                        Book your room
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

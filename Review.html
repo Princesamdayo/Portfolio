@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <title>Read Review</title>
+    </head>
+
+    <style>
+
+        .reviews {
+    background: #f5f3ef;
+    padding: 100px 7%;
+    font-family: Arial, sans-serif;
+}
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.reviews-header p {
+    color: #777;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.reviews-header h1 {
+    font-family: Georgia, serif;
+    font-size: 55px;
+    font-weight: normal;
+    color: #222;
+    margin: 15px 0;
+}
+
+.reviews-header span {
+    color: #666;
+    font-size: 17px;
+}
+
+.reviews-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.review-card {
+    background: white;
+    padding: 40px 30px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+.stars {
+    color: #b5965a;
+    font-size: 22px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.review-text {
+    color: #555;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.review-card h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.review-card span {
+    color: #888;
+    font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews-header h1 {
+        font-size: 40px;
+    }
+
+}
+.back-btn {
+    display: inline-block;
+    padding: 14px 25px;
+
+    background: #111;
+    color: white;
+
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #444;
+}
+    </style>
+
+    <body>
+            <a href="index.html" class="back-btn">
+    ← Back to Home
+</a>    
+        <section class="reviews">
+    
+
+    <div class="reviews-header">
+        <p>GUEST EXPERIENCES</p>
+        <h1>Read our reviews</h1>
+        <span>See what our guests say about their stay.</span>
+    </div>
+
+    <div class="reviews-container">
+
+        <!-- Review 1 -->
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+
+            <p class="review-text">
+                “A beautiful hotel with a great atmosphere.
+                The room was clean and comfortable and the staff
+                were very friendly.”
+            </p>
+
+            <h3>James Anderson</h3>
+            <span>United Kingdom</span>
+        </div>
+
+
+        <!-- Review 2 -->
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+
+            <p class="review-text">
+                “Wonderful experience from beginning to end.
+                The location was perfect and the service was excellent.”
+            </p>
+
+            <h3>Sarah Wilson</h3>
+            <span>Germany</span>
+        </div>
+
+
+        <!-- Review 3 -->
+        <div class="review-card">
+            <div class="stars">★★★★☆</div>
+
+            <p class="review-text">
+                “Very comfortable room and a lovely place to stay.
+                I would definitely come back again.”
+            </p>
+
+            <h3>Michael Brown</h3>
+            <span>Norway</span>
+        </div>
+
+    </div>
+
+</section>
+
+    </body>
+</html>
